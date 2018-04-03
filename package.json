@@ -5,7 +5,7 @@
 
   },
   "scripts": {
-    "test": "run functional test",
-    "test2": "run legacy api tests"
+    "test": "echo run functional test",
+    "test2": "echo run legacy api tests"
   }
 }
