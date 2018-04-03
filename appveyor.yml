@@ -5,5 +5,5 @@ build: off
 test_script:
 - echo %APPVEYOR_PULL_REQUEST_NUMBER%
 - echo %APPVEYOR_REPO_BRANCH%
-cmd: npm test
-cmd: run-legacy-api-functional-tests-if-necessary.cmd
+- cmd: npm test
+- cmd: run-legacy-api-functional-tests-if-necessary.cmd
