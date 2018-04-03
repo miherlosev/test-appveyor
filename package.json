@@ -5,6 +5,6 @@
 
   },
   "scripts": {
-    "test": "echo npm test"
+    "test": "echo %APPVEYOR_PULL_REQUEST_NUMBER%"
   }
 }
