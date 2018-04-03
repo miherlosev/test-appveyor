@@ -6,4 +6,4 @@ test_script:
 - echo %APPVEYOR_PULL_REQUEST_NUMBER%
 - echo %APPVEYOR_REPO_BRANCH%
 - cmd: npm test
-- cmd: run-legacy-api-functional-tests-if-necessary.cmd
+- cmd: if '%APPVEYOR_REPO_BRANCH%' == 'master' (set GULP_TASK=test-functional-travis-legacy && npm run test3)

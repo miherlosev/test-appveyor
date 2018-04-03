@@ -6,6 +6,7 @@
   },
   "scripts": {
     "test": "echo run functional test",
-    "test2": "echo run legacy api tests"
+    "test2": "echo run legacy api tests",
+    "test3": "echo %GULP_TASK%"
   }
 }
