@@ -4,5 +4,5 @@ clone_depth: 1
 build: off
 
 test_script:
-- cmd: echo %APPVEYOR_PULL_REQUEST_NUMBER%
+- echo %APPVEYOR_PULL_REQUEST_NUMBER%
 - cmd: npm test
