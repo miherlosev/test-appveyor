@@ -5,6 +5,7 @@
 
   },
   "scripts": {
-    "test": "echo npm test actions"
+    "test": "run functional test",
+    "test2": "run legacy api tests"
   }
 }
