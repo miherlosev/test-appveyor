@@ -2,8 +2,15 @@ clone_depth: 1
 
 build: off
 
+notifications:
+  - provider: Email
+    to:
+      - '{{commitAuthorEmail}}'
+    on_build_status_changed: true
+
 test_script:
+- echo %APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL%
 - echo %APPVEYOR_PULL_REQUEST_NUMBER%
 - echo %APPVEYOR_REPO_BRANCH%
 - cmd: npm test
-- cmd: run-legacy-api-functional-tests-if-necessary.cmd
+- cmd: if '%APPVEYOR_REPO_BRANCH%' == 'master' (set GULP_TASK=test-functional-travis-legacy && npm run test3)
