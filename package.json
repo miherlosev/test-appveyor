@@ -1,0 +1,10 @@
+{
+  "name": "test-appveyor",
+  "version": "0.0.1",
+  "dependencies": {
+
+  },
+  "scripts": {
+    "test": "echo npm test"
+  }
+}

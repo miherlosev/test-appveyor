@@ -1,0 +1,6 @@
+clone_depth: 1
+
+build: off
+
+test_script:
+- cmd: npm test
