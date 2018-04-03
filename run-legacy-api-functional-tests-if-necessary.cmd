@@ -1,4 +1,4 @@
-if not defined APPVEYOR_PULL_REQUEST_NUMBER (
+if '%APPVEYOR_REPO_BRANCH%' == 'master' (
     echo setup variable to run gulp task
     npm run test2
 )
