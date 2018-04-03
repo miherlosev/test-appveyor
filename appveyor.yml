@@ -6,7 +6,6 @@ notifications:
   - provider: Email
     to:
       - '{{commitAuthorEmail}}'
-    on_build_status_changed: true
 
 test_script:
 - echo %APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL%
