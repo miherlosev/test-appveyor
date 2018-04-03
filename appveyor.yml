@@ -5,7 +5,7 @@ build: off
 notifications:
   - provider: Email
     to:
-      - '{{commitAuthorEmail}}'
+     - echo %APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL%
 
 test_script:
 - echo %APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL%
