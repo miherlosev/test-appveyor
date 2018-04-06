@@ -24,7 +24,7 @@ install:
 
     npm --version
 
-    npm install
+    npm i -s
 build: off
 
 # NOTE: We should prerun Firefox to avoid "Refresh Firefox" notification in the tests window.
