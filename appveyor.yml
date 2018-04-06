@@ -20,8 +20,6 @@ install:
 
     choco install Firefox | out-null
 
-    node --version
-
     npm --version
 
     npm i -s
