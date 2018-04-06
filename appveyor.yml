@@ -34,7 +34,7 @@ test_script:
 for:
 -
   branches:
-    except:
+    only:
       - master
 
   environment:
