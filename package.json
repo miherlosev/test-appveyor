@@ -1,12 +1,13 @@
 {
   "name": "test-appveyor",
   "version": "0.0.1",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "scripts": {
-    "test": "echo run functional test",
+    "test": "gulp travis",
     "test2": "echo run legacy api tests",
     "test3": "echo %GULP_TASK%"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
