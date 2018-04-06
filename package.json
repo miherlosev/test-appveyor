@@ -1,6 +1,7 @@
 {
   "name": "test-appveyor",
   "version": "0.0.1",
+  "description": "test-appveyor",
   "dependencies": {},
   "scripts": {
     "test": "gulp travis",
